@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Lemme see your books!</h1>
+  <% books.forEach(function(book){ %>
+    <p>
+      <a href="/books/<%= book._id%>">See More</a>
+      <%= book.title%>
+    </p>
+  <% })%>
+  <a href="/books/new">Add a new one!</a>
+</body>
+</html>
