@@ -6,9 +6,9 @@
 </head>
 <body>
   <h1><%= author.firstName%> <%= author.lastName%>'s books</h1>
-  <% books.forEach(function(book){ %>
+  <% author.books.forEach(function(book){ %>
     <p>
-      <a href="/authors/<%= author.id%>/books/<%= book._id%>">See More</a>
+      <a href="/authors/<%= author._id%>/books/<%= book._id%>">See More</a>
       <%= book.title%>
     </p>
   <% })%>
