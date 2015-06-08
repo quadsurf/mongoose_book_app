@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/authors/<%= author.id%>/books" method="POST">
+  <div>
+    <label for="title">Title:</label>
+    <input autofocus  type="text" name="title" id="title">
+  </div>
+  <div>
+    <input type="submit" value="Add!">
+  </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Lemme see your authors!</h1>
+    <p>
+
+      <form action="/authors/<%= author._id%>?_method=put" method="POST">
+      <div>
+         <label for="firstName">First Name:</label>
+         <input autofocus type="text" name="firstName" id="title" value = <%= author.firstName%>>
+       </div>
+       <div>
+          <label for="lastName">Last Name:</label>
+          <input autofocus type="text" name="lastName" id="title" value = <%= author.lastName%>>
+        </div>
+       <div>
+         <input type="submit" value="Update">
+       </div>
+      </form>
+    </p>
+</body>
+</html>

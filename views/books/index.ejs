@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1><%= author.firstName%> <%= author.lastName%>'s books</h1>
+  <% books.forEach(function(book){ %>
+    <p>
+      <a href="/authors/<%= author.id%>/books/<%= book._id%>">See More</a>
+      <%= book.title%>
+    </p>
+  <% })%>
+  <a href="/authors/<%= author.id%>/books/new">Add a new one!</a>
+  <p>
+    <a href="/authors/<%= author._id%>/edit">Edit this author</a>
+  </p>
+  <p>
+    <a href="/authors">See all authors</a>
+  </p>
+</body>
+</html>

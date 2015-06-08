@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Lemme see your authors!</h1>
+  <% authors.forEach(function(author){ %>
+    <p>
+      <a href="/authors/<%= author._id%>"><%= author.firstName%> <%= author.lastName%></a>
+    </p>
+  <% })%>
+  <a href="/authors/new">Add a new one!</a>
+</body>
+</html>
